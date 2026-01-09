@@ -1,0 +1,162 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml calc.twx calc.ncd -o calc.twr calc.pcf -ucf Nexys3_master.ucf
+
+Design file:              calc.ncd
+Physical constraint file: calc.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sw<7>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+sw<0>       |   -1.245(R)|      FAST  |    3.043(R)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+            |   -1.325(F)|      FAST  |    3.205(F)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+sw<1>       |   -1.102(R)|      FAST  |    2.864(R)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+            |   -1.025(F)|      FAST  |    2.785(F)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+sw<2>       |   -1.094(R)|      FAST  |    2.881(R)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+            |   -1.081(F)|      FAST  |    2.902(F)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+sw<3>       |   -1.059(R)|      FAST  |    2.835(R)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+            |   -1.046(F)|      FAST  |    2.849(F)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+sw<4>       |   -1.306(R)|      FAST  |    3.186(R)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+            |   -1.183(F)|      FAST  |    2.993(F)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+sw<5>       |   -0.920(R)|      FAST  |    2.747(R)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+            |   -0.964(F)|      FAST  |    2.805(F)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+sw<6>       |   -1.245(R)|      FAST  |    3.114(R)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+            |   -1.369(F)|      FAST  |    3.230(F)|      SLOW  |sw_7_IBUF_BUFG    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Led0        |        10.376(R)|      SLOW  |         5.960(R)|      FAST  |Clk_BUFGP         |   0.000|
+an<0>       |        10.540(R)|      SLOW  |         5.673(R)|      FAST  |Clk_BUFGP         |   0.000|
+an<1>       |        10.553(R)|      SLOW  |         5.687(R)|      FAST  |Clk_BUFGP         |   0.000|
+an<2>       |        10.076(R)|      SLOW  |         5.708(R)|      FAST  |Clk_BUFGP         |   0.000|
+an<3>       |        10.109(R)|      SLOW  |         5.724(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<0>      |        13.064(R)|      SLOW  |         6.305(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<1>      |        13.031(R)|      SLOW  |         6.320(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<2>      |        13.166(R)|      SLOW  |         6.383(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<3>      |        13.479(R)|      SLOW  |         6.457(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<4>      |        12.691(R)|      SLOW  |         6.043(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<5>      |        13.272(R)|      SLOW  |         6.288(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<6>      |        13.395(R)|      SLOW  |         6.532(R)|      FAST  |Clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock sw<7> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+seg<0>      |        61.441(R)|      SLOW  |        10.498(R)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+            |        68.047(F)|      SLOW  |        11.380(F)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+seg<1>      |        61.276(R)|      SLOW  |        10.513(R)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+            |        67.882(F)|      SLOW  |        11.395(F)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+seg<2>      |        61.411(R)|      SLOW  |        10.576(R)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+            |        68.017(F)|      SLOW  |        11.458(F)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+seg<3>      |        61.326(R)|      SLOW  |        10.824(R)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+            |        67.932(F)|      SLOW  |        11.706(F)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+seg<4>      |        60.937(R)|      SLOW  |        10.236(R)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+            |        67.543(F)|      SLOW  |        11.118(F)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+seg<5>      |        61.119(R)|      SLOW  |        10.655(R)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+            |        67.725(F)|      SLOW  |        11.537(F)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+seg<6>      |        61.772(R)|      SLOW  |        10.725(R)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+            |        68.378(F)|      SLOW  |        11.607(F)|      FAST  |sw_7_IBUF_BUFG    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    3.336|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+btn<0>         |seg<0>         |   40.366|
+btn<0>         |seg<1>         |   40.201|
+btn<0>         |seg<2>         |   40.336|
+btn<0>         |seg<3>         |   40.251|
+btn<0>         |seg<4>         |   39.862|
+btn<0>         |seg<5>         |   40.044|
+btn<0>         |seg<6>         |   40.697|
+btn<1>         |seg<0>         |   41.053|
+btn<1>         |seg<1>         |   40.888|
+btn<1>         |seg<2>         |   41.023|
+btn<1>         |seg<3>         |   40.938|
+btn<1>         |seg<4>         |   40.549|
+btn<1>         |seg<5>         |   40.731|
+btn<1>         |seg<6>         |   41.384|
+btn<2>         |seg<0>         |   38.633|
+btn<2>         |seg<1>         |   38.468|
+btn<2>         |seg<2>         |   38.603|
+btn<2>         |seg<3>         |   38.518|
+btn<2>         |seg<4>         |   38.129|
+btn<2>         |seg<5>         |   38.311|
+btn<2>         |seg<6>         |   38.964|
+btn<3>         |seg<0>         |   41.351|
+btn<3>         |seg<1>         |   41.186|
+btn<3>         |seg<2>         |   41.321|
+btn<3>         |seg<3>         |   41.236|
+btn<3>         |seg<4>         |   40.847|
+btn<3>         |seg<5>         |   41.029|
+btn<3>         |seg<6>         |   41.682|
+btn<4>         |seg<0>         |   40.164|
+btn<4>         |seg<1>         |   39.999|
+btn<4>         |seg<2>         |   40.134|
+btn<4>         |seg<3>         |   40.049|
+btn<4>         |seg<4>         |   39.660|
+btn<4>         |seg<5>         |   39.842|
+btn<4>         |seg<6>         |   40.495|
+sw<7>          |seg<0>         |   39.167|
+sw<7>          |seg<1>         |   39.002|
+sw<7>          |seg<2>         |   39.137|
+sw<7>          |seg<3>         |   39.052|
+sw<7>          |seg<4>         |   38.663|
+sw<7>          |seg<5>         |   38.845|
+sw<7>          |seg<6>         |   39.498|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Oct 10 09:53:49 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 161 MB
+
+
+

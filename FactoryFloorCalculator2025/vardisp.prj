@@ -1,0 +1,3 @@
+vhdl work "timer.vhdl"
+vhdl work "bcd7seg.vhd"
+vhdl work "vardisp.vhdl"

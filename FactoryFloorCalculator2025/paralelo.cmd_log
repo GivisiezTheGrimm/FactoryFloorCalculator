@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/paralelo.xst" -ofn "E:/FactoryFloorCalculator2025/paralelo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 paralelo.ngc paralelo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o paralelo_map.ncd paralelo.ngd paralelo.pcf 
+par -w -intstyle ise -ol high -mt off paralelo_map.ncd paralelo.ncd paralelo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml paralelo.twx paralelo.ncd -o paralelo.twr paralelo.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f paralelo.ut paralelo.ncd 
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/paralelo.xst" -ofn "E:/FactoryFloorCalculator2025/paralelo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 paralelo.ngc paralelo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o paralelo_map.ncd paralelo.ngd paralelo.pcf 
+par -w -intstyle ise -ol high -mt off paralelo_map.ncd paralelo.ncd paralelo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml paralelo.twx paralelo.ncd -o paralelo.twr paralelo.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f paralelo.ut paralelo.ncd 

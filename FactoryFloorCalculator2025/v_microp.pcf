@@ -1,0 +1,857 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Nov 07 09:21:18 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+NET
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.pc_write_I"
+        USELOWSKEWLINES;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "T5" LEVEL 1;
+PIN sw<7>_pin<0> = BEL "sw<7>" PINNAME PAD;
+PIN "sw<7>_pin<0>" CLOCK_DEDICATED_ROUTE;
+COMP "led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "B8" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "A8" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "btn<2>" LOCATE = SITE "C4" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "btn<3>" LOCATE = SITE "C9" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "btn<4>" LOCATE = SITE "D9" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+PIN
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[0].RAMB16_S9_1_pins<22>
+        = BEL
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[0].RAMB16_S9_1"
+        PINNAME CLKA;
+PIN
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[0].RAMB16_S9_1_pins<23>
+        = BEL
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[0].RAMB16_S9_1"
+        PINNAME CLKB;
+PIN
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[1].RAMB16_S9_1_pins<22>
+        = BEL
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[1].RAMB16_S9_1"
+        PINNAME CLKA;
+PIN
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[1].RAMB16_S9_1_pins<23>
+        = BEL
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[1].RAMB16_S9_1"
+        PINNAME CLKB;
+PIN
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[2].RAMB16_S9_1_pins<22>
+        = BEL
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[2].RAMB16_S9_1"
+        PINNAME CLKA;
+PIN
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[2].RAMB16_S9_1_pins<23>
+        = BEL
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[2].RAMB16_S9_1"
+        PINNAME CLKB;
+PIN
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[3].RAMB16_S9_1_pins<22>
+        = BEL
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[3].RAMB16_S9_1"
+        PINNAME CLKA;
+PIN
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[3].RAMB16_S9_1_pins<23>
+        = BEL
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[3].RAMB16_S9_1"
+        PINNAME CLKB;
+TIMEGRP sys_clk_pin = BEL "clk_BUFGP/BUFG" BEL "mcs_0/U0/ilmb_cntlr/Sl_Rdy"
+        BEL "mcs_0/U0/ilmb_cntlr/lmb_as" BEL "mcs_0/U0/ilmb/POR_FF_I" BEL
+        "mcs_0/U0/filter_reset.reset_vec_0" BEL
+        "mcs_0/U0/filter_reset.reset_vec_1" BEL
+        "mcs_0/U0/filter_reset.reset_vec_2" BEL "mcs_0/U0/LMB_Rst" BEL
+        "mcs_0/U0/iomodule_0/lmb_reg_read_Q" BEL
+        "mcs_0/U0/iomodule_0/lmb_abus_Q_0" BEL
+        "mcs_0/U0/iomodule_0/lmb_abus_Q_1" BEL
+        "mcs_0/U0/iomodule_0/lmb_abus_Q_2" BEL
+        "mcs_0/U0/iomodule_0/lmb_abus_Q_3" BEL
+        "mcs_0/U0/iomodule_0/lmb_abus_Q_4" BEL
+        "mcs_0/U0/iomodule_0/lmb_abus_Q_5" BEL
+        "mcs_0/U0/iomodule_0/lmb_reg_read" BEL
+        "mcs_0/U0/iomodule_0/lmb_reg_write" BEL
+        "mcs_0/U0/iomodule_0/write_data_7" BEL
+        "mcs_0/U0/iomodule_0/write_data_6" BEL
+        "mcs_0/U0/iomodule_0/write_data_5" BEL
+        "mcs_0/U0/iomodule_0/write_data_4" BEL
+        "mcs_0/U0/iomodule_0/write_data_3" BEL
+        "mcs_0/U0/iomodule_0/write_data_2" BEL
+        "mcs_0/U0/iomodule_0/write_data_1" BEL
+        "mcs_0/U0/iomodule_0/write_data_0" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I3/gpo_io_i_0" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I3/gpo_io_i_1" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I3/gpo_io_i_2" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I3/gpo_io_i_3" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I2/gpo_io_i_0" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I2/gpo_io_i_1" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I2/gpo_io_i_2" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I2/gpo_io_i_3" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I2/gpo_io_i_4" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I2/gpo_io_i_5" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I2/gpo_io_i_6" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I2/GPI_In_0" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I2/GPI_In_1" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I2/GPI_In_2" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I2/GPI_In_3" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_7" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_6" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_5" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_4" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_3" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_2" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_1" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_0" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_7" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_6" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_5" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_4" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_3" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_2" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_1" BEL
+        "mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_0" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/sync_reset" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[15].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[15].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[15].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[14].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[14].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[14].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[13].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[13].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[13].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[12].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[12].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[12].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[11].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[11].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[11].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[10].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[10].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[10].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[9].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[9].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[9].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[8].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[8].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[8].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[7].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[7].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[7].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[6].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[6].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[6].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[5].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[5].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[5].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[4].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[4].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[4].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[3].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[3].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[3].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[2].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[2].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[2].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[1].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[1].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[1].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[22].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[22].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[22].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[21].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[21].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[21].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[20].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[20].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[20].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[19].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[19].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[19].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[18].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[18].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[18].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[17].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[17].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[17].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_0"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_2"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_3"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_4"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_5"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_6"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_7"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_8"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_9"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_10"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_11"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_12"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_13"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_14"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Size_17to32.imm_Reg_15"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[24].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[24].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[24].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[25].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[25].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[25].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[29].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[29].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[29].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[30].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[30].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[30].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[31].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[31].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[31].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[28].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[28].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[28].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[27].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[27].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[27].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[26].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[26].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[26].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[0].Operand_Select_Bit_I/Op2_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[0].Operand_Select_Bit_I/Op1_Reg_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[0].Operand_Select_Bit_I/Op1_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[19].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[20].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[21].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[22].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[23].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[24].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[25].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[26].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[27].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[28].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[29].PC_Bit_I/PC_OF_Buffer/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[29].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[28].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[27].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[26].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[25].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[24].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[23].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[22].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[21].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[20].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.Not_All_Bits.PC_GEN[19].PC_Bit_I/Set_DFF.PC_IF_DFF"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Reg_Test_Equal_N_FDRE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Reg_Test_Equal_FDSE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Use_Reg_Neg_DI_FDRE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Use_Reg_Neg_S_FDRE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Force_Val1_FDRE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Force2_FDRE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Force1_FDRE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.ALU_Carry_FDRE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.ALU_OP1_FDRE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.ALU_OP0_FDRE"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/reset_BIP_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Compare_Instr"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/enable_Interrupts_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Unsigned_Op"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/writing"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Result_Sel_0"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Result_Sel_1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/write_Addr_I_0"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/write_Addr_I_1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/write_Addr_I_2"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/write_Addr_I_3"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/write_Addr_I_4"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Logic_Oper_0"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Logic_Oper_1"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/FPU_Cond_0"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/FPU_Cond_1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Shift_Carry_In"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/set_BIP_I"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Sext16" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/using_Imm" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Sext8" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/doublet_i" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/byte_i" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/is_swx_I" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/select_ALU_Carry"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/load_Store_i"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/is_lwx_I"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/jump2_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Select_Logic"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/mbar_decode_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/EX_First_Cycle"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Mul_Handling.mbar_first"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/reset_delay"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[0].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[1].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[2].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[3].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[4].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[5].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[6].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[7].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[8].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[9].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[10].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[11].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[12].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[13].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[14].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[15].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[16].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[17].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[18].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[19].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[20].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[21].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[22].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[23].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[24].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[25].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[26].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[27].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[28].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[29].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[30].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[31].SRL16E_I/Use_unisim.MB_SRL16E_I1"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.of_valid_FDR_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[3].FDS_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[2].FDS_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I"
+        BEL "mcs_0/U0/dlmb/POR_FF_I" BEL "mcs_0/U0/dlmb_cntlr/lmb_as" BEL
+        "mcs_0/U0/dlmb_cntlr/Sl_Rdy" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/MSR_Reg_I/Using_FPGA.MSR_Bits[28].Using_MSR_Reg_Bit.MSR_Reg_Bit_I/MSR_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/MSR_Reg_I/Using_FPGA.MSR_Bits[29].Using_MSR_Reg_Bit.MSR_Reg_Bit_I/MSR_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/MSR_Reg_I/Using_FPGA.MSR_Bits[30].Using_MSR_Reg_Bit.MSR_Reg_Bit_I/MSR_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Force_Val2_FDRSE"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/write_Reg"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/write_Carry_I"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Sign_Extend"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/quadlet_Read_i"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/doublet_Read_i"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/mbar_sleep"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/missed_IFetch"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/nonvalid_IFetch_n"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/iFetch_In_Progress"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/reservation"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/ex_Valid"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/swx_ready"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/d_AS_I" BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/mtsmsr_write_i"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/mbar_hold_I"
+        BEL "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/inHibit_EX"
+        PIN
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[0].RAMB16_S9_1_pins<22>"
+        PIN
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[0].RAMB16_S9_1_pins<23>"
+        PIN
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[1].RAMB16_S9_1_pins<22>"
+        PIN
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[1].RAMB16_S9_1_pins<23>"
+        PIN
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[2].RAMB16_S9_1_pins<22>"
+        PIN
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[2].RAMB16_S9_1_pins<23>"
+        PIN
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[3].RAMB16_S9_1_pins<22>"
+        PIN
+        "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S9.The_BRAMs[3].RAMB16_S9_1_pins<23>"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[31].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[31].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[31].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[31].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[30].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[30].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[30].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[30].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[29].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[29].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[29].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[29].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[28].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[28].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[28].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[28].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[27].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[27].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[27].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[27].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[26].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[26].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[26].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[26].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[25].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[25].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[25].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[25].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[24].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[24].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[24].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[24].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[23].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[23].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[23].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[23].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[22].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[22].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[22].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[22].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[21].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[21].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[21].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[21].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[20].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[20].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[20].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[20].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[19].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[19].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[19].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[19].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[18].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[18].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[18].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[18].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[17].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[17].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[17].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[17].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[16].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[16].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[16].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[16].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[15].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[15].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[15].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[15].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[14].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[14].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[14].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[14].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[13].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[13].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[13].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[13].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[12].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[12].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[12].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[12].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[11].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[11].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[11].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[11].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[10].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[10].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[10].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[10].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[9].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[9].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[9].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[9].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[8].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[8].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[8].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[8].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[7].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[7].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[7].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[7].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[6].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[6].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[6].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[6].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[5].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[5].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[5].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[5].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[4].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[4].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[4].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[4].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[3].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[3].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[3].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[3].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[2].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[2].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[2].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[2].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[1].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[1].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[1].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[1].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[0].Register_File_Bit_I/Using_LUT6.RegFile_X1/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[0].Register_File_Bit_I/Using_LUT6.RegFile_X1/DP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[0].Register_File_Bit_I/Using_LUT6.RegFile_X2/SP"
+        BEL
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Register_File_I/Using_FPGA.Gen_RegFile[0].Register_File_Bit_I/Using_LUT6.RegFile_X2/DP";
+SCHEMATIC END;
+

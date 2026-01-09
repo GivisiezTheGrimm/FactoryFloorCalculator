@@ -1,0 +1,2640 @@
+09:20:03 **** Incremental Build of configuration Debug for project calc ****
+make all 
+make: Nothing to be done for `all'.
+09:49:45 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:9:11: error: 'seg' undeclared (first use in this function)
+../src/teste.c:9:11: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/teste.o] Error 1
+09:51:31 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3992	    344	   2096	   6432	   1920	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:31:47 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:9:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3992	    344	   2096	   6432	   1920	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:33:29 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3992	    344	   2096	   6432	   1920	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:40:17 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4256	    344	   2096	   6696	   1a28	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:44:04 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4256	    344	   2096	   6696	   1a28	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:45:15 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4256	    344	   2096	   6696	   1a28	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:45:37 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4256	    344	   2096	   6696	   1a28	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:49:35 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/teste.o: In function `main':
+E:\FactoryFloorCalculator2025\ipcore_dir\microp\workspace\calc\Debug/../src/teste.c:6: multiple definition of `main'
+./src/bcd7seg.o:E:\FactoryFloorCalculator2025\ipcore_dir\microp\workspace\calc\Debug/../src/bcd7seg.c:6: first defined here
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+08:49:57 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4256	    344	   2096	   6696	   1a28	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:52:47 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:22:2: warning: implicit declaration of function 'bcd7seg' [-Wimplicit-function-declaration]
+../src/teste.c:9:12: warning: unused variable 'seg' [-Wunused-variable]
+../src/teste.c:9:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4416	    344	   2096	   6856	   1ac8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:54:46 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:12:12: warning: unused variable 'seg' [-Wunused-variable]
+../src/teste.c:12:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4416	    344	   2096	   6856	   1ac8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:55:40 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:12:12: warning: unused variable 'seg' [-Wunused-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4444	    344	   2100	   6888	   1ae8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:56:41 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4436	    344	   2100	   6880	   1ae0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:59:31 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+../src/bcd7seg.c: In function 'bcd7seg':
+../src/bcd7seg.c:59:28: error: 'gpo' undeclared (first use in this function)
+../src/bcd7seg.c:59:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/bcd7seg.o] Error 1
+08:59:45 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+../src/bcd7seg.c: In function 'bcd7seg':
+../src/bcd7seg.c:7:11: warning: variable 'seg' set but not used [-Wunused-but-set-variable]
+../src/bcd7seg.c:10:2: warning: 'data' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4700	    344	   2100	   7144	   1be8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:00:30 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+../src/bcd7seg.c: In function 'bcd7seg':
+../src/bcd7seg.c:59:28: error: 'gpo' undeclared (first use in this function)
+../src/bcd7seg.c:59:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/bcd7seg.o] Error 1
+09:03:39 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+../src/bcd7seg.c: In function 'bcd7seg':
+../src/bcd7seg.c:8:6: error: 'data' redeclared as different kind of symbol
+../src/bcd7seg.c:6:17: note: previous definition of 'data' was here
+../src/bcd7seg.c:59:28: error: 'gp' undeclared (first use in this function)
+../src/bcd7seg.c:59:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/bcd7seg.c:60:5: error: expected ')' before 'o'
+../src/bcd7seg.c:60:5: error: too few arguments to function 'XIOModule_DiscreteWrite'
+../../calc_bsp/microp/include/xiomodule.h:459:6: note: declared here
+../src/bcd7seg.c:8:11: warning: variable 'seg' set but not used [-Wunused-but-set-variable]
+make: *** [src/bcd7seg.o] Error 1
+09:03:42 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+../src/bcd7seg.c: In function 'bcd7seg':
+../src/bcd7seg.c:8:6: error: 'data' redeclared as different kind of symbol
+../src/bcd7seg.c:6:17: note: previous definition of 'data' was here
+../src/bcd7seg.c:59:28: error: 'gp' undeclared (first use in this function)
+../src/bcd7seg.c:59:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/bcd7seg.c:60:5: error: expected ')' before 'o'
+../src/bcd7seg.c:60:5: error: too few arguments to function 'XIOModule_DiscreteWrite'
+../../calc_bsp/microp/include/xiomodule.h:459:6: note: declared here
+../src/bcd7seg.c:8:11: warning: variable 'seg' set but not used [-Wunused-but-set-variable]
+make: *** [src/bcd7seg.o] Error 1
+09:03:59 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+../src/bcd7seg.c: In function 'bcd7seg':
+../src/bcd7seg.c:59:28: error: 'gpo' undeclared (first use in this function)
+../src/bcd7seg.c:59:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/bcd7seg.o] Error 1
+09:04:45 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+../src/bcd7seg.c: In function 'bcd7seg':
+../src/bcd7seg.c:59:28: error: 'gpo' undeclared (first use in this function)
+../src/bcd7seg.c:59:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/bcd7seg.o] Error 1
+09:04:50 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+../src/bcd7seg.c: In function 'bcd7seg':
+../src/bcd7seg.c:10:9: error: 'data' undeclared (first use in this function)
+../src/bcd7seg.c:10:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/bcd7seg.c:59:28: error: 'gpo' undeclared (first use in this function)
+make: *** [src/bcd7seg.o] Error 1
+09:04:53 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:12:12: warning: unused variable 'seg' [-Wunused-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4416	    344	   2096	   6856	   1ac8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:07:33 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4424	    344	   2096	   6864	   1ad0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:08:49 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4424	    344	   2096	   6864	   1ad0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:11:14 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4376	    344	   2096	   6816	   1aa0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:12:09 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:12:12: warning: unused variable 'seg' [-Wunused-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4376	    344	   2096	   6816	   1aa0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:12:35 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4376	    344	   2096	   6816	   1aa0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:13:27 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4376	    344	   2096	   6816	   1aa0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:22:14 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4376	    344	   2096	   6816	   1aa0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:22:39 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4404	    344	   2100	   6848	   1ac0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:23:50 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4404	    344	   2100	   6848	   1ac0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:24:32 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4404	    344	   2100	   6848	   1ac0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:26:09 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:28:3: error: 'an' undeclared (first use in this function)
+../src/teste.c:28:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/teste.c:49:1: error: expected declaration or statement at end of input
+make: *** [src/teste.o] Error 1
+09:28:14 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:13: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4520	    344	   2096	   6960	   1b30	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:29:57 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:13: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4520	    344	   2096	   6960	   1b30	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:30:15 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:13: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4520	    344	   2096	   6960	   1b30	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:30:49 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:13: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4520	    344	   2096	   6960	   1b30	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:31:55 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:37:8: error: 't' undeclared (first use in this function)
+../src/teste.c:37:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/teste.c:13:13: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+make: *** [src/teste.o] Error 1
+09:34:01 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:13: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4588	    344	   2100	   7032	   1b78	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:36:17 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:13: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4356	    344	   2100	   6800	   1a90	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:36:30 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:13: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4356	    344	   2100	   6800	   1a90	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:36:42 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:7: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4356	    344	   2100	   6800	   1a90	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:37:21 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:7: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4356	    344	   2100	   6800	   1a90	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:37:54 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:14:20: error: redeclaration of 't' with no linkage
+../src/teste.c:12:11: note: previous declaration of 't' was here
+../src/teste.c:13:7: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+make: *** [src/teste.o] Error 1
+09:38:01 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:7: warning: variable 'an' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4356	    344	   2100	   6800	   1a90	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:38:57 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4364	    344	   2100	   6808	   1a98	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:45:48 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4408	    344	   2096	   6848	   1ac0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:46:40 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4400	    344	   2096	   6840	   1ab8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:47:02 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4400	    344	   2096	   6840	   1ab8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:47:41 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4396	    344	   2100	   6840	   1ab8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:52:40 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:4: error: 'num' undeclared (first use in this function)
+../src/teste.c:29:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/teste.o] Error 1
+09:54:27 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:8: warning: 'data' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:54:55 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:8: warning: 'data' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:56:30 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:8: warning: 'data' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:56:53 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:8: warning: 'data' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:36:22 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdispv.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdispv.d" -MT"src/numdispv.d" -o "src/numdispv.o" "../src/numdispv.c"
+../src/numdispv.c: In function 'main':
+../src/numdispv.c:29:8: warning: 'data' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/numdispv.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdispv.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/teste.o: In function `main':
+E:\FactoryFloorCalculator2025\ipcore_dir\microp\workspace\calc\Debug/../src/teste.c:9: multiple definition of `main'
+./src/numdispv.o:E:\FactoryFloorCalculator2025\ipcore_dir\microp\workspace\calc\Debug/../src/numdispv.c:9: first defined here
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+08:37:16 **** Clean-only build of configuration Debug for project calc ****
+make clean 
+rm -rf  ./src/bcd7seg.o ./src/helloworld.o ./src/numdispv.o ./src/platform.o ./src/teste.o  ./src/bcd7seg.d ./src/helloworld.d ./src/numdispv.d ./src/platform.d ./src/teste.d  calc.elf.size  calc.elf.elfcheck  calc.elf
+' '
+08:37:17 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/bcd7seg.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bcd7seg.d" -MT"src/bcd7seg.d" -o "src/bcd7seg.o" "../src/bcd7seg.c"
+'Finished building: ../src/bcd7seg.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:8: warning: 'data' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:37:43 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+../src/numdisp.c: In function 'main':
+../src/numdisp.c:29:8: warning: 'data' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/teste.o: In function `main':
+E:\FactoryFloorCalculator2025\ipcore_dir\microp\workspace\calc\Debug/../src/teste.c:9: multiple definition of `main'
+./src/numdisp.o:E:\FactoryFloorCalculator2025\ipcore_dir\microp\workspace\calc\Debug/../src/numdisp.c:9: first defined here
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+08:37:50 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+../src/numdisp.c: In function 'numdisp':
+../src/numdisp.c:29:8: warning: 'data' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:39:17 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+../src/numdisp.c: In function 'numdisp':
+../src/numdisp.c:33:15: error: 'gpo' undeclared (first use in this function)
+../src/numdisp.c:33:15: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/numdisp.o] Error 1
+08:40:00 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:40:56 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:42:18 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+../src/numdisp.c: In function 'numdisp':
+../src/numdisp.c:19:2: warning: 'disp' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:46:31 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+../src/numdisp.c: In function 'numdisp':
+../src/numdisp.c:19:2: warning: 'disp' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:46:43 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+../src/numdisp.c: In function 'numdisp':
+../src/numdisp.c:19:2: warning: 'disp' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    344	   2100	   7376	   1cd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:47:13 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:26:9: error: 'disp' undeclared (first use in this function)
+../src/teste.c:26:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/teste.c:27:10: error: 'an' undeclared (first use in this function)
+../src/teste.c:28:4: error: 'num' undeclared (first use in this function)
+../src/teste.c:46:8: error: 't' undeclared (first use in this function)
+make: *** [src/teste.o] Error 1
+08:48:24 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:10: error: 'num' undeclared (first use in this function)
+../src/teste.c:29:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/teste.c:31:35: error: 'an' undeclared (first use in this function)
+../src/teste.c:38:1: error: expected declaration or statement at end of input
+make: *** [src/teste.o] Error 1
+08:48:53 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:31:35: error: 'an' undeclared (first use in this function)
+../src/teste.c:31:35: note: each undeclared identifier is reported only once for each function it appears in
+../src/teste.c:38:1: error: expected declaration or statement at end of input
+make: *** [src/teste.o] Error 1
+08:49:50 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:36:1: error: expected declaration or statement at end of input
+make: *** [src/teste.o] Error 1
+08:50:05 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5320	    344	   2096	   7760	   1e50	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:58:53 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5324	    344	   2100	   7768	   1e58	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:58:59 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5324	    344	   2100	   7768	   1e58	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:59:58 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5324	    344	   2100	   7768	   1e58	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:02:12 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5328	    344	   2096	   7768	   1e58	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:02:32 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5328	    344	   2096	   7768	   1e58	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:04:15 **** Incremental Build of configuration Debug for project calc ****
+make all 
+make: Nothing to be done for `all'.
+09:23:17 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:14:18: warning: variable 'B' set but not used [-Wunused-but-set-variable]
+../src/teste.c:14:16: warning: variable 'A' set but not used [-Wunused-but-set-variable]
+../src/teste.c:13:12: warning: variable 'btn' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5400	    344	   2096	   7840	   1ea0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:33:00 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:36:6: error: expected '(' before 'A'
+../src/teste.c:36:6: warning: statement with no effect [-Wunused-value]
+make: *** [src/teste.o] Error 1
+09:33:15 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 376 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+09:38:25 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:5: warning: 'A' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 88 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+09:38:36 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:5: warning: 'A' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 88 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+09:42:59 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:5: warning: 'A' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 88 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+09:43:29 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 88 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+09:51:38 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:5: warning: 'A' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 88 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+08:47:39 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:5: warning: 'A' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 8 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+09:04:25 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:5: warning: 'A' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5684	    344	   2100	   8128	   1fc0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:06:43 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:26:3: error: 'data' undeclared (first use in this function)
+../src/teste.c:26:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/teste.c:14:16: warning: unused variable 'datda' [-Wunused-variable]
+make: *** [src/teste.o] Error 1
+09:06:57 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:5: warning: 'A' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5680	    344	   2096	   8120	   1fb8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:09:23 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:29:5: warning: 'A' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5680	    344	   2096	   8120	   1fb8	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:10:25 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5688	    344	   2096	   8128	   1fc0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:15:41 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5688	    344	   2096	   8128	   1fc0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:15:45 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 112 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+09:16:10 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/numdisp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/numdisp.d" -MT"src/numdisp.d" -o "src/numdisp.o" "../src/numdisp.c"
+'Finished building: ../src/numdisp.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5688	    344	   2096	   8128	   1fc0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+09:16:14 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5688	    344	   2096	   8128	   1fc0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:45:14 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:9: warning: variable 'D' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 56 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+08:45:59 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:54:4: warning: statement with no effect [-Wunused-value]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 16 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+08:46:11 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:9: warning: unused variable 'D' [-Wunused-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5688	    344	   2096	   8128	   1fc0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:46:32 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:13:9: warning: variable 'D' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 24 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+08:49:44 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+../src/teste.c: In function 'main':
+../src/teste.c:56:4: warning: statement with no effect [-Wunused-value]
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5700	    344	   2100	   8144	   1fd0	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:50:01 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 16 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+08:52:10 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: calc.elf section `.stack' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 16 bytes
+collect2: ld returned 1 exit status
+make: *** [calc.elf] Error 1
+08:53:06 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5528	    344	   2096	   7968	   1f20	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:54:02 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5588	    344	   2100	   8032	   1f60	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:54:20 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5600	    344	   2096	   8040	   1f68	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+08:59:37 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5572	    344	   2100	   8016	   1f50	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '

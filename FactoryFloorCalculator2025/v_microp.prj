@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/microp.v"
+verilog work "v_microp.v"

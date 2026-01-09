@@ -1,0 +1,33 @@
+08:59:37 **** Auto Build of configuration Debug for project calc ****
+make all 
+'Building file: ../src/teste.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../calc_bsp/microp/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/teste.d" -MT"src/teste.d" -o "src/teste.o" "../src/teste.c"
+'Finished building: ../src/teste.c'
+' '
+'Building target: calc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../calc_bsp/microp/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "calc.elf"  ./src/bcd7seg.o ./src/helloworld.o ./src/numdisp.o ./src/platform.o ./src/teste.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: calc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size calc.elf  |tee "calc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5572	    344	   2100	   8016	   1f50	calc.elf
+'Finished building: calc.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck calc.elf -hw ../../hw_platform_0/system.xml -pe microp  |tee "calc.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microp calc.elf 
+
+ELF file	: calc.elf
+elfcheck passed.
+'Finished building: calc.elf.elfcheck'
+' '
+
+08:59:39 Build Finished (took 2s.256ms)
+

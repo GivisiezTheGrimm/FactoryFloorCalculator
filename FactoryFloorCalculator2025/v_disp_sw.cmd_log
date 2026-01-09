@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/v_disp_sw.xst" -ofn "E:/FactoryFloorCalculator2025/v_disp_sw.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_disp_sw.ngc v_disp_sw.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_disp_sw.ngc v_disp_sw.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_disp_sw.ngc v_disp_sw.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_disp_sw.ngc v_disp_sw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o v_disp_sw_map.ncd v_disp_sw.ngd v_disp_sw.pcf 
+par -w -intstyle ise -ol high -mt off v_disp_sw_map.ncd v_disp_sw.ncd v_disp_sw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml v_disp_sw.twx v_disp_sw.ncd -o v_disp_sw.twr v_disp_sw.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f v_disp_sw.ut v_disp_sw.ncd 

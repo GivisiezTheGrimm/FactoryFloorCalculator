@@ -1,0 +1,56 @@
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/v_microp.xst" -ofn "E:/FactoryFloorCalculator2025/v_microp.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_microp.ngc v_microp.ngd -bm "ipcore_dir/microp.bmm" 
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/v_microp.xst" -ofn "E:/FactoryFloorCalculator2025/v_microp.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_microp.ngc v_microp.ngd -bm "ipcore_dir/microp.bmm" 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o v_microp_map.ncd v_microp.ngd v_microp.pcf 
+par -w -intstyle ise -ol high -mt off v_microp_map.ncd v_microp.ncd v_microp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml v_microp.twx v_microp.ncd -o v_microp.twr v_microp.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/v_microp.xst" -ofn "E:/FactoryFloorCalculator2025/v_microp.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_microp.ngc v_microp.ngd -bm "ipcore_dir/microp.bmm" 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o v_microp_map.ncd v_microp.ngd v_microp.pcf 
+par -w -intstyle ise -ol high -mt off v_microp_map.ncd v_microp.ncd v_microp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml v_microp.twx v_microp.ncd -o v_microp.twr v_microp.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/v_microp.xst" -ofn "E:/FactoryFloorCalculator2025/v_microp.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_microp.ngc v_microp.ngd -bm "ipcore_dir/microp.bmm" 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o v_microp_map.ncd v_microp.ngd v_microp.pcf 
+par -w -intstyle ise -ol high -mt off v_microp_map.ncd v_microp.ncd v_microp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml v_microp.twx v_microp.ncd -o v_microp.twr v_microp.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/v_microp.xst" -ofn "E:/FactoryFloorCalculator2025/v_microp.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_microp.ngc v_microp.ngd -bm "ipcore_dir/microp.bmm" 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o v_microp_map.ncd v_microp.ngd v_microp.pcf 
+par -w -intstyle ise -ol high -mt off v_microp_map.ncd v_microp.ncd v_microp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml v_microp.twx v_microp.ncd -o v_microp.twr v_microp.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 
+bitgen -intstyle ise -f v_microp.ut v_microp.ncd 

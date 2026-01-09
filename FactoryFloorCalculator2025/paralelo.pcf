@@ -1,0 +1,37 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Oct 17 08:49:20 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "sw" LOCATE = SITE "T10" LEVEL 1;
+COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "repetir[0].u1/Led0" BEL "repetir[1].u1/Led0" BEL
+        "repetir[2].u1/Led0" BEL "repetir[3].u1/Led0" BEL "repetir[4].u1/Led0"
+        BEL "repetir[5].u1/Led0" BEL "repetir[6].u1/Led0" BEL
+        "repetir[0].u1/COUNT_0" BEL "repetir[0].u1/COUNT_1" BEL
+        "repetir[0].u1/COUNT_2" BEL "repetir[0].u1/COUNT_3" BEL
+        "repetir[0].u1/COUNT_4" BEL "repetir[0].u1/COUNT_5" BEL
+        "repetir[0].u1/COUNT_6" BEL "repetir[0].u1/COUNT_7" BEL
+        "repetir[0].u1/COUNT_8" BEL "repetir[0].u1/COUNT_9" BEL
+        "repetir[0].u1/COUNT_10" BEL "repetir[0].u1/COUNT_11" BEL
+        "repetir[0].u1/COUNT_12" BEL "repetir[0].u1/COUNT_13" BEL
+        "repetir[0].u1/COUNT_14" BEL "repetir[0].u1/COUNT_15" BEL
+        "repetir[0].u1/COUNT_16" BEL "repetir[0].u1/COUNT_17" BEL
+        "repetir[0].u1/COUNT_18" BEL "repetir[0].u1/COUNT_19" BEL
+        "repetir[0].u1/COUNT_20" BEL "repetir[0].u1/COUNT_21" BEL
+        "repetir[0].u1/COUNT_22" BEL "repetir[0].u1/COUNT_23" BEL
+        "repetir[0].u1/COUNT_24" BEL "repetir[0].u1/COUNT_25" BEL
+        "repetir[0].u1/COUNT_26" BEL "repetir[0].u1/COUNT_27" BEL
+        "repetir[0].u1/COUNT_28" BEL "repetir[0].u1/COUNT_29" BEL
+        "repetir[0].u1/COUNT_30" BEL "repetir[7].u1/Led0" BEL
+        "Clk_BUFGP/BUFG";
+SCHEMATIC END;
+

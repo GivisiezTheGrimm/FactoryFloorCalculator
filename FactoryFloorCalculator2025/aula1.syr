@@ -1,0 +1,487 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: aula1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "aula1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "aula1"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : aula1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\FactoryFloorCalculator2025\aula1.vhf" into library work
+Parsing entity <CB4CE_HXILINX_aula1>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_aula1>.
+Parsing entity <AND12_HXILINX_aula1>.
+Parsing architecture <AND12_HXILINX_aula1_V> of entity <and12_hxilinx_aula1>.
+Parsing entity <CB16CE_HXILINX_aula1>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_aula1>.
+Parsing entity <CB8CE_HXILINX_aula1>.
+Parsing architecture <Behavioral> of entity <cb8ce_hxilinx_aula1>.
+Parsing entity <aula1>.
+Parsing architecture <BEHAVIORAL> of entity <aula1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <aula1> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <CB4CE_HXILINX_aula1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CB16CE_HXILINX_aula1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CB8CE_HXILINX_aula1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <AND12_HXILINX_aula1> (architecture <AND12_HXILINX_aula1_V>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <aula1>.
+    Related source file is "D:\FactoryFloorCalculator2025\aula1.vhf".
+    Set property "HU_SET = XLXI_5_2" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_7_0" for instance <XLXI_7>.
+    Set property "HU_SET = XLXI_8_1" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_9_3" for instance <XLXI_9>.
+INFO:Xst:3210 - "D:\FactoryFloorCalculator2025\aula1.vhf" line 302: Output port <CEO> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FactoryFloorCalculator2025\aula1.vhf" line 302: Output port <TC> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FactoryFloorCalculator2025\aula1.vhf" line 313: Output port <TC> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FactoryFloorCalculator2025\aula1.vhf" line 321: Output port <TC> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <aula1> synthesized.
+
+Synthesizing Unit <CB4CE_HXILINX_aula1>.
+    Related source file is "D:\FactoryFloorCalculator2025\aula1.vhf".
+    Found 4-bit register for signal <COUNT>.
+    Found 4-bit adder for signal <COUNT[3]_GND_8_o_add_0_OUT> created at line 57.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <CB4CE_HXILINX_aula1> synthesized.
+
+Synthesizing Unit <CB16CE_HXILINX_aula1>.
+    Related source file is "D:\FactoryFloorCalculator2025\aula1.vhf".
+    Found 16-bit register for signal <COUNT>.
+    Found 16-bit adder for signal <COUNT[15]_GND_9_o_add_0_OUT> created at line 133.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <CB16CE_HXILINX_aula1> synthesized.
+
+Synthesizing Unit <CB8CE_HXILINX_aula1>.
+    Related source file is "D:\FactoryFloorCalculator2025\aula1.vhf".
+    Found 8-bit register for signal <COUNT>.
+    Found 8-bit adder for signal <COUNT[7]_GND_10_o_add_0_OUT> created at line 176.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+Unit <CB8CE_HXILINX_aula1> synthesized.
+
+Synthesizing Unit <AND12_HXILINX_aula1>.
+    Related source file is "D:\FactoryFloorCalculator2025\aula1.vhf".
+    Summary:
+	no macro.
+Unit <AND12_HXILINX_aula1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 3
+ 16-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CB16CE_HXILINX_aula1>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB16CE_HXILINX_aula1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CB4CE_HXILINX_aula1>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB4CE_HXILINX_aula1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CB8CE_HXILINX_aula1>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB8CE_HXILINX_aula1> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 16-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <aula1> ...
+
+Optimizing unit <CB4CE_HXILINX_aula1> ...
+
+Optimizing unit <CB16CE_HXILINX_aula1> ...
+
+Optimizing unit <CB8CE_HXILINX_aula1> ...
+
+Optimizing unit <AND12_HXILINX_aula1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block aula1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : aula1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 92
+#      AND2                        : 1
+#      GND                         : 2
+#      INV                         : 5
+#      LUT1                        : 22
+#      LUT2                        : 4
+#      LUT3                        : 2
+#      LUT4                        : 1
+#      LUT6                        : 6
+#      MUXCY                       : 22
+#      VCC                         : 2
+#      XNOR2                       : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 28
+#      FDCE                        : 28
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 2
+#      OBUF                        : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              28  out of  18224     0%  
+ Number of Slice LUTs:                   40  out of   9112     0%  
+    Number used as Logic:                40  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     68
+   Number with an unused Flip Flop:      40  out of     68    58%  
+   Number with an unused LUT:            28  out of     68    41%  
+   Number of fully used LUT-FF pairs:     0  out of     68     0%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    232     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.008ns (Maximum Frequency: 142.685MHz)
+   Minimum input arrival time before clock: 2.901ns
+   Maximum output required time after clock: 5.739ns
+   Maximum combinational path delay: 7.335ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.008ns (frequency: 142.685MHz)
+  Total number of paths / destination ports: 742 / 56
+-------------------------------------------------------------------------
+Delay:               7.008ns (Levels of Logic = 9)
+  Source:            XLXI_8/COUNT_7 (FF)
+  Destination:       XLXI_5/COUNT_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_8/COUNT_7 to XLXI_5/COUNT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.447   1.015  COUNT_7 (COUNT_7)
+     end scope: 'XLXI_8:Q<7>'
+     begin scope: 'XLXI_9:I2'
+     LUT6:I0->O            1   0.203   0.684  O1 (O1)
+     LUT2:I0->O            2   0.203   0.616  O3 (O)
+     end scope: 'XLXI_9:O'
+     INV:I->O             17   0.568   1.028  XLXI_11 (XLXN_63)
+     begin scope: 'XLXI_7:CE'
+     LUT2:I1->O            9   0.205   0.830  CEO1 (CEO)
+     end scope: 'XLXI_7:CEO'
+     begin scope: 'XLXI_8:CE'
+     LUT2:I1->O            4   0.205   0.683  CEO1 (CEO)
+     end scope: 'XLXI_8:CEO'
+     begin scope: 'XLXI_5:CE'
+     FDCE:CE                   0.322          COUNT_0
+    ----------------------------------------
+    Total                      7.008ns (2.153ns logic, 4.855ns route)
+                                       (30.7% logic, 69.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 28 / 28
+-------------------------------------------------------------------------
+Offset:              2.901ns (Levels of Logic = 2)
+  Source:            sw1 (PAD)
+  Destination:       XLXI_5/COUNT_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sw1 to XLXI_5/COUNT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            29   1.222   1.249  sw1_IBUF (sw1_IBUF)
+     begin scope: 'XLXI_5:CLR'
+     FDCE:CLR                  0.430          COUNT_0
+    ----------------------------------------
+    Total                      2.901ns (1.652ns logic, 1.249ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Offset:              5.739ns (Levels of Logic = 5)
+  Source:            XLXI_8/COUNT_7 (FF)
+  Destination:       Led0 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: XLXI_8/COUNT_7 to Led0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.447   1.015  COUNT_7 (COUNT_7)
+     end scope: 'XLXI_8:Q<7>'
+     begin scope: 'XLXI_9:I2'
+     LUT6:I0->O            1   0.203   0.684  O1 (O1)
+     LUT2:I0->O            2   0.203   0.616  O3 (O)
+     end scope: 'XLXI_9:O'
+     OBUF:I->O                 2.571          Led0_OBUF (Led0)
+    ----------------------------------------
+    Total                      5.739ns (3.424ns logic, 2.315ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Delay:               7.335ns (Levels of Logic = 4)
+  Source:            sw1 (PAD)
+  Destination:       Led2 (PAD)
+
+  Data Path: sw1 to Led2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            29   1.222   1.594  sw1_IBUF (sw1_IBUF)
+     AND2:I1->O            1   0.223   0.924  XLXI_1 (XLXN_2)
+     XNOR2:I1->O           1   0.223   0.579  XLXI_4 (Led2_OBUF)
+     OBUF:I->O                 2.571          Led2_OBUF (Led2)
+    ----------------------------------------
+    Total                      7.335ns (4.239ns logic, 3.096ns route)
+                                       (57.8% logic, 42.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.008|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.03 secs
+ 
+--> 
+
+Total memory usage is 205024 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

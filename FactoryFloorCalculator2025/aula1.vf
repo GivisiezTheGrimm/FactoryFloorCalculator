@@ -1,0 +1,210 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : aula1.vf
+// /___/   /\     Timestamp : 10/23/2025 09:45:38
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog aula1.vf -w E:/FactoryFloorCalculator2025/aula1.sch
+//Design Name: aula1
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CE_HXILINX_aula1(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module AND12_HXILINX_aula1 (O, I0, I1, I2, I3, I4, I5, I6, I7, I8, I9, I10, I11);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+   input I7;
+   input I8;
+   input I9;
+   input I10;
+   input I11;
+
+assign O = I0 && I1 && I2 && I3 && I4 && I5 && I6 && I7 && I8 && I9 && I10 && I11;
+
+endmodule
+`timescale 100 ps / 10 ps
+
+module CB16CE_HXILINX_aula1(CEO, Q, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 16'b1111_1111_1111_1111;
+   
+   output             CEO;
+   output [15:0]      Q;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg    [15:0]      Q;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 16'b0000_0000_0000_0000;
+	else if (CE)
+	  Q <= Q + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = (Q == TERMINAL_COUNT);
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module CB8CE_HXILINX_aula1(CEO, Q, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 8'b1111_1111;
+   
+   output             CEO;
+   output [7:0]       Q;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg   [7:0]        Q;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 8'b0000_0000;
+	else if (CE)
+	  Q <= Q + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = (Q == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module aula1(clk, 
+             sw1, 
+             sw2, 
+             Led, 
+             led0, 
+             Led2);
+
+    input clk;
+    input sw1;
+    input sw2;
+   output [7:4] Led;
+   output led0;
+   output Led2;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_36;
+   wire XLXN_37;
+   wire [7:0] XLXN_43;
+   wire [15:0] XLXN_44;
+   wire XLXN_64;
+   wire led0_DUMMY;
+   wire [7:4] Led_DUMMY;
+   
+   assign Led[7:4] = Led_DUMMY[7:4];
+   assign led0 = led0_DUMMY;
+   AND2  XLXI_1 (.I0(sw2), 
+                .I1(sw1), 
+                .O(XLXN_2));
+   INV  XLXI_3 (.I(sw2), 
+               .O(XLXN_3));
+   XNOR2  XLXI_4 (.I0(XLXN_3), 
+                 .I1(XLXN_2), 
+                 .O(Led2));
+   (* HU_SET = "XLXI_5_2" *) 
+   CB4CE_HXILINX_aula1  XLXI_5 (.C(clk), 
+                               .CE(XLXN_37), 
+                               .CLR(sw1), 
+                               .CEO(), 
+                               .Q0(Led_DUMMY[4]), 
+                               .Q1(Led_DUMMY[5]), 
+                               .Q2(Led_DUMMY[6]), 
+                               .Q3(Led_DUMMY[7]), 
+                               .TC());
+   (* HU_SET = "XLXI_7_0" *) 
+   CB16CE_HXILINX_aula1  XLXI_7 (.C(clk), 
+                                .CE(led0_DUMMY), 
+                                .CLR(sw1), 
+                                .CEO(XLXN_36), 
+                                .Q(XLXN_44[15:0]), 
+                                .TC());
+   (* HU_SET = "XLXI_8_1" *) 
+   CB8CE_HXILINX_aula1  XLXI_8 (.C(clk), 
+                               .CE(XLXN_36), 
+                               .CLR(sw1), 
+                               .CEO(XLXN_37), 
+                               .Q(XLXN_43[7:0]), 
+                               .TC());
+   (* HU_SET = "XLXI_9_3" *) 
+   AND12_HXILINX_aula1  XLXI_9 (.I0(Led_DUMMY[6]), 
+                               .I1(Led_DUMMY[4]), 
+                               .I2(XLXN_43[7]), 
+                               .I3(XLXN_43[6]), 
+                               .I4(XLXN_43[5]), 
+                               .I5(XLXN_43[4]), 
+                               .I6(XLXN_43[2]), 
+                               .I7(XLXN_43[0]), 
+                               .I8(XLXN_44[15]), 
+                               .I9(XLXN_44[14]), 
+                               .I10(XLXN_44[13]), 
+                               .I11(XLXN_44[8]), 
+                               .O(XLXN_64));
+   INV  XLXI_11 (.I(XLXN_64), 
+                .O(led0_DUMMY));
+endmodule

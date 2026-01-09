@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\FactoryFloorCalculator2025\calc.ncd
+OUTFILE=E:\FactoryFloorCalculator2025\calc.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=E:\FactoryFloorCalculator2025
+LICENSE=WebPack
+USER_INFO=210771271_0_0_813

@@ -1,0 +1,3 @@
+verilog work "v_bcd_7seg.v"
+verilog work "temporizadorv.v"
+verilog work "v_disp_sw.v"

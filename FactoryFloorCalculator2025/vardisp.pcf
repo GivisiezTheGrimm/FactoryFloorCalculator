@@ -1,0 +1,29 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Oct 02 08:31:58 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "Led0" LOCATE = SITE "U16" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "zera" BEL "disp_0" BEL "disp_1" BEL "u1/COUNT_0"
+        BEL "u1/COUNT_1" BEL "u1/COUNT_2" BEL "u1/COUNT_3" BEL "u1/COUNT_4"
+        BEL "u1/COUNT_5" BEL "u1/COUNT_6" BEL "u1/COUNT_7" BEL "u1/COUNT_8"
+        BEL "u1/COUNT_9" BEL "u1/COUNT_10" BEL "u1/COUNT_11" BEL "u1/COUNT_12"
+        BEL "u1/COUNT_13" BEL "u1/COUNT_14" BEL "u1/COUNT_15" BEL
+        "u1/COUNT_16" BEL "u1/COUNT_17" BEL "u1/COUNT_18" BEL "u1/COUNT_19"
+        BEL "u1/COUNT_20" BEL "u1/COUNT_21" BEL "u1/COUNT_22" BEL
+        "u1/COUNT_23" BEL "u1/COUNT_24" BEL "u1/COUNT_25" BEL "u1/COUNT_26"
+        BEL "u1/COUNT_27" BEL "u1/Led0" BEL "u2/Led0" BEL "Clk_BUFGP/BUFG";
+SCHEMATIC END;
+

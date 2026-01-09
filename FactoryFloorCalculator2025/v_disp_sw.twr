@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml v_disp_sw.twx v_disp_sw.ncd -o v_disp_sw.twr v_disp_sw.pcf
+-ucf Nexys3_master.ucf
+
+Design file:              v_disp_sw.ncd
+Physical constraint file: v_disp_sw.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.676|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+sw<0>          |seg<0>         |    9.337|
+sw<0>          |seg<1>         |    9.130|
+sw<0>          |seg<2>         |    9.489|
+sw<0>          |seg<3>         |    9.649|
+sw<0>          |seg<4>         |    8.737|
+sw<0>          |seg<5>         |    9.273|
+sw<0>          |seg<6>         |    8.767|
+sw<1>          |seg<0>         |   10.314|
+sw<1>          |seg<1>         |   10.302|
+sw<1>          |seg<2>         |   10.500|
+sw<1>          |seg<3>         |   10.626|
+sw<1>          |seg<4>         |   10.302|
+sw<1>          |seg<5>         |   10.284|
+sw<1>          |seg<6>         |   10.332|
+sw<2>          |seg<0>         |   13.790|
+sw<2>          |seg<1>         |   13.819|
+sw<2>          |seg<2>         |   14.062|
+sw<2>          |seg<3>         |   14.102|
+sw<2>          |seg<4>         |   13.864|
+sw<2>          |seg<5>         |   13.846|
+sw<2>          |seg<6>         |   13.894|
+sw<3>          |seg<0>         |   14.283|
+sw<3>          |seg<1>         |   14.312|
+sw<3>          |seg<2>         |   14.555|
+sw<3>          |seg<3>         |   14.595|
+sw<3>          |seg<4>         |   14.357|
+sw<3>          |seg<5>         |   14.339|
+sw<3>          |seg<6>         |   14.387|
+sw<4>          |seg<0>         |   14.237|
+sw<4>          |seg<1>         |   14.266|
+sw<4>          |seg<2>         |   14.509|
+sw<4>          |seg<3>         |   14.549|
+sw<4>          |seg<4>         |   14.311|
+sw<4>          |seg<5>         |   14.293|
+sw<4>          |seg<6>         |   14.341|
+sw<5>          |seg<0>         |   13.840|
+sw<5>          |seg<1>         |   13.869|
+sw<5>          |seg<2>         |   14.112|
+sw<5>          |seg<3>         |   14.152|
+sw<5>          |seg<4>         |   13.914|
+sw<5>          |seg<5>         |   13.896|
+sw<5>          |seg<6>         |   13.944|
+sw<6>          |seg<0>         |   14.236|
+sw<6>          |seg<1>         |   14.265|
+sw<6>          |seg<2>         |   14.508|
+sw<6>          |seg<3>         |   14.548|
+sw<6>          |seg<4>         |   14.310|
+sw<6>          |seg<5>         |   14.292|
+sw<6>          |seg<6>         |   14.340|
+sw<7>          |seg<0>         |   14.323|
+sw<7>          |seg<1>         |   14.352|
+sw<7>          |seg<2>         |   14.595|
+sw<7>          |seg<3>         |   14.635|
+sw<7>          |seg<4>         |   14.397|
+sw<7>          |seg<5>         |   14.379|
+sw<7>          |seg<6>         |   14.427|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Oct 24 09:21:29 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 152 MB
+
+
+

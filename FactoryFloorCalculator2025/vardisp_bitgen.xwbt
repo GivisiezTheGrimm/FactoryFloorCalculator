@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FactoryFloorCalculator2025\vardisp.ncd
+OUTFILE=D:\FactoryFloorCalculator2025\vardisp.bit
+FAMILY=Spartan6
+PART=xc6slx16-3ncsg324
+WORKINGDIR=D:\FactoryFloorCalculator2025
+LICENSE=WebPack
+USER_INFO=210771271_0_0_813

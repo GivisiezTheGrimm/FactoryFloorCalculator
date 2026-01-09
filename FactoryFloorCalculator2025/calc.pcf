@@ -1,0 +1,49 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Oct 10 09:53:28 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "Led0" LOCATE = SITE "U16" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "T5" LEVEL 1;
+PIN sw<7>_pin<0> = BEL "sw<7>" PINNAME PAD;
+PIN "sw<7>_pin<0>" CLOCK_DEDICATED_ROUTE;
+COMP "btn<0>" LOCATE = SITE "B8" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "A8" LEVEL 1;
+COMP "btn<2>" LOCATE = SITE "C4" LEVEL 1;
+COMP "btn<3>" LOCATE = SITE "C9" LEVEL 1;
+COMP "btn<4>" LOCATE = SITE "D9" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "u0/u0/zera" BEL "u0/u0/u1/Led0" BEL "u0/u0/u2/Led0"
+        BEL "u0/u0/disp_0" BEL "u0/u0/disp_1" BEL "u0/u0/u1/COUNT_0" BEL
+        "u0/u0/u1/COUNT_1" BEL "u0/u0/u1/COUNT_2" BEL "u0/u0/u1/COUNT_3" BEL
+        "u0/u0/u1/COUNT_4" BEL "u0/u0/u1/COUNT_5" BEL "u0/u0/u1/COUNT_6" BEL
+        "u0/u0/u1/COUNT_7" BEL "u0/u0/u1/COUNT_8" BEL "u0/u0/u1/COUNT_9" BEL
+        "u0/u0/u1/COUNT_10" BEL "u0/u0/u1/COUNT_11" BEL "u0/u0/u1/COUNT_12"
+        BEL "u0/u0/u1/COUNT_13" BEL "u0/u0/u1/COUNT_14" BEL
+        "u0/u0/u1/COUNT_15" BEL "u0/u0/u1/COUNT_16" BEL "u0/u0/u1/COUNT_17"
+        BEL "u0/u0/u1/COUNT_18" BEL "u0/u0/u1/COUNT_19" BEL
+        "u0/u0/u1/COUNT_20" BEL "u0/u0/u1/COUNT_21" BEL "u0/u0/u1/COUNT_22"
+        BEL "u0/u0/u1/COUNT_23" BEL "u0/u0/u1/COUNT_24" BEL
+        "u0/u0/u1/COUNT_25" BEL "u0/u0/u1/COUNT_26" BEL "u0/u0/u1/COUNT_27"
+        BEL "u0/u0/u1/COUNT_28" BEL "u0/u0/u1/COUNT_29" BEL
+        "u0/u0/u1/COUNT_30" BEL "Clk_BUFGP/BUFG";
+SCHEMATIC END;
+

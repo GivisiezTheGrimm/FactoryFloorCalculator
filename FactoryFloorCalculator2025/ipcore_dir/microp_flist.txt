@@ -1,0 +1,18 @@
+# Output products list for <microp>
+mb_bootloop_le.elf
+microblaze_mcs_setup.tcl
+microp.asy
+microp.bmm
+microp.gise
+microp.ngc
+microp.sym
+microp.v
+microp.veo
+microp.xco
+microp.xise
+microp\mb_bootloop_le.elf
+microp\microblaze_mcs_setup.tcl
+microp\system_template.tcl
+microp_flist.txt
+microp_readme.txt
+microp_sdk.xml

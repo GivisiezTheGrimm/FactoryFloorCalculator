@@ -1,0 +1,32 @@
+xst -intstyle ise -ifn "D:/FactoryFloorCalculator2025/aula1.xst" -ofn "D:/FactoryFloorCalculator2025/aula1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 aula1.ngc aula1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aula1_map.ncd aula1.ngd aula1.pcf 
+par -w -intstyle ise -ol high -mt off aula1_map.ncd aula1.ncd aula1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml aula1.twx aula1.ncd -o aula1.twr aula1.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f aula1.ut aula1.ncd 
+bitgen -intstyle ise -f aula1.ut aula1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 aula1.ngc aula1.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 aula1.ngc aula1.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 aula1.ngc aula1.ngd  
+xst -intstyle ise -ifn "D:/FactoryFloorCalculator2025/aula1.xst" -ofn "D:/FactoryFloorCalculator2025/aula1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 aula1.ngc aula1.ngd  
+xst -intstyle ise -ifn "D:/FactoryFloorCalculator2025/aula1.xst" -ofn "D:/FactoryFloorCalculator2025/aula1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 aula1.ngc aula1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aula1_map.ncd aula1.ngd aula1.pcf 
+par -w -intstyle ise -ol high -mt off aula1_map.ncd aula1.ncd aula1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml aula1.twx aula1.ncd -o aula1.twr aula1.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f aula1.ut aula1.ncd 
+xst -intstyle ise -ifn "D:/FactoryFloorCalculator2025/aula1.xst" -ofn "D:/FactoryFloorCalculator2025/aula1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 aula1.ngc aula1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aula1_map.ncd aula1.ngd aula1.pcf 
+par -w -intstyle ise -ol high -mt off aula1_map.ncd aula1.ncd aula1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml aula1.twx aula1.ncd -o aula1.twr aula1.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f aula1.ut aula1.ncd 
+xst -intstyle ise -ifn "D:/FactoryFloorCalculator2025/aula1.xst" -ofn "D:/FactoryFloorCalculator2025/aula1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 aula1.ngc aula1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aula1_map.ncd aula1.ngd aula1.pcf 
+par -w -intstyle ise -ol high -mt off aula1_map.ncd aula1.ncd aula1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml aula1.twx aula1.ncd -o aula1.twr aula1.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f aula1.ut aula1.ncd 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl aula1.vhf -w D:/FactoryFloorCalculator2025/aula1.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog aula1.vf -w E:/FactoryFloorCalculator2025/aula1.sch 

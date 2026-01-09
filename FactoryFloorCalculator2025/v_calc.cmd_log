@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/v_calc.xst" -ofn "E:/FactoryFloorCalculator2025/v_calc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_calc.ngc v_calc.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o v_calc_map.ncd v_calc.ngd v_calc.pcf 
+par -w -intstyle ise -ol high -mt off v_calc_map.ncd v_calc.ncd v_calc.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml v_calc.twx v_calc.ncd -o v_calc.twr v_calc.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f v_calc.ut v_calc.ncd 
+xst -intstyle ise -ifn "E:/FactoryFloorCalculator2025/v_calc.xst" -ofn "E:/FactoryFloorCalculator2025/v_calc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 v_calc.ngc v_calc.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o v_calc_map.ncd v_calc.ngd v_calc.pcf 
+par -w -intstyle ise -ol high -mt off v_calc_map.ncd v_calc.ncd v_calc.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml v_calc.twx v_calc.ncd -o v_calc.twr v_calc.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f v_calc.ut v_calc.ncd 

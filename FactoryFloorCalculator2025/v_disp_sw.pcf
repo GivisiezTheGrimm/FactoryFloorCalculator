@@ -1,0 +1,31 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Oct 24 09:20:39 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "T5" LEVEL 1;
+PIN sw<7>_pin<0> = BEL "sw<7>" PINNAME PAD;
+PIN "sw<7>_pin<0>" CLOCK_DEDICATED_ROUTE;
+TIMEGRP sys_clk_pin = BEL "zera" BEL "u0/led" BEL "u0/tempo_7" BEL
+        "u0/tempo_8" BEL "u0/tempo_9" BEL "u0/tempo_10" BEL "u0/tempo_11" BEL
+        "u0/tempo_12" BEL "u0/tempo_13" BEL "u0/tempo_14" BEL "u0/tempo_15"
+        BEL "u0/tempo_16" BEL "u0/tempo_0" BEL "u0/tempo_1" BEL "u0/tempo_2"
+        BEL "u0/tempo_3" BEL "u0/tempo_4" BEL "u0/tempo_5" BEL "u0/tempo_6"
+        BEL "clk_BUFGP/BUFG";
+SCHEMATIC END;
+
